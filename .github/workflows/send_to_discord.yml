@@ -26,30 +26,33 @@ jobs:
         # Must-Have Angles
         
         1. **Japan equities overview:** Closing performance of **Nikkei / TOPIX / TSE Growth**, total **TSE turnover**, and **key drivers** (top sector contributors, **USD/JPY**, domestic & global rates, **US/China** markets, catalysts such as earnings/policy).
-        2. **Notable moves:** **5–10 Japan single names** (+/−5%+, YTD high/low, unusual volume, etc.) with **ticker**, **close-to-close %**, and a **50–100 Japanese-character reason** (company news, media report, analyst action, flow/technicals). Plus **2–3 other assets** (gold, WTI, FX, rates, major ETFs/crypto) with % change and brief basis.
-        3. **Today’s key events:** Up to **5** (macro data, policy, earnings, IPO/offerings), include time and figures vs. consensus when available.
-        4. **Tomorrow watch:** **1–2** items (only if space allows).
+        2. **Notable moves:** **5–10 Japan single names** (+/−5%+, YTD high/low, unusual volume, etc.) with **ticker**, **close-to-close %**, and a **50-100 Japanese-character reason** (company news, media report, analyst action, flow/technicals). Plus **2–3 other assets** (gold, WTI, FX, rates, BTC) with % change and brief basis.
+        3. **Today’s key events:** Up to **5** (any big news happend in the world)
+        4. **Comment on today's market including Japan, US (around 500 Japanese-character)
+        5. **Tomorrow watch:** **3** (Any Japanese ticker which have catalysts) items.
+        6. **Tomorrow watch:** **3** (Any macro events) items.
         
         # Verification & Style Rules
         
-        * **Facts only**. Keep searching until confirmed; **no “unknown/unconfirmed.”** If an approximation is unavoidable, mark **(推定)**.
-        * **JST only** for “today.” Ignore items outside `{{date_yyyy-mm-dd}}` JST.
-        * **Citations:** End **each line** with `[Outlet/Time JST]` (e.g., `[Nikkei/15:10]`).
+        * **Facts only**. Keep searching until confirmed; **no “unknown/unconfirmed.”**.
           For single-name stocks, prioritize **Kabutan** and **Nikkei**.
         * **Numbers:** Half-width digits; **percent with 1 decimal** (e.g., `+1.2%`). Close-to-close unless specified.
         * **Tone:** Concise, newsroom bullet style. No extra commentary beyond the template.
-        * **Length:** **≤ 2,000 characters** total.
+        * **Length:** **≤ 3,000 characters** total.
         * If sources conflict, prefer exchange/official or most reputable; be consistent.
         
         # Output Template (fill in **Japanese** exactly in this shape)
         
         ```
         【{{date_yyyy-mm-dd}} 市況まとめ】
-        ・日本株：日経{{±x.x%}}/TOPIX{{±x.x%}}/グロース{{±x.x%}}。主因：{{要因1・要因2}}。［媒体/時刻］
-        ・個別：{{銘柄}} {{±x.x%}}（{{50–100字の理由}}）。{{銘柄}} {{±x.x%}}（{{理由}}）。［媒体/時刻］
-        ・他資産：金{{±x.x%}}、WTI{{±x.x%}}、USD/JPY {{xxx.x}}、米10年{{x.xx%}}。［媒体/時刻］
-        ・イベント：{{イベント1}}、{{イベント2}}、{{イベント3}}。［媒体/時刻］
-        ・明日：{{注目1}}、{{注目2}}。［媒体/時刻］
+        ・日本株：日経{{±x.x%}}/TOPIX{{±x.x%}}/グロース{{±x.x%}}。主因：{{要因1・要因2}}
+        ・個別：{{銘柄}} {{±x.x%}}（{{50–100字の理由}}）。{{銘柄}} {{±x.x%}}（{{理由}}）
+        ・他資産：金{{±x.x%}}、WTI{{±x.x%}}、USD/JPY {{xxx.x}}、BTC {{±x.x%}}、米10年{{x.xx%}}
+        ・イベント：{{イベント1}}、{{イベント2}}、{{イベント3}}
+        ・コメント：{{総括コメント}}
+        ・明日：{{注目1}}、{{注目2}}、{{注目3}}
+        ・明日：{{注目1}}、{{注目2}}、{{注目3}}
+        
         ```
         
         # Data Sources (examples)
