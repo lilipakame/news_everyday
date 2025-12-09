@@ -38,7 +38,7 @@ jobs:
           For single-name stocks, prioritize **Kabutan** and **Nikkei**.
         * **Numbers:** Half-width digits; **percent with 1 decimal** (e.g., `+1.2%`). Close-to-close unless specified.
         * **Tone:** Concise, newsroom bullet style. No extra commentary beyond the template.
-        * **Length:** **must be ≤ 2,000 characters** total.
+        * **Length:** **must be ≤ 1,900 characters** total.
         * If sources conflict, prefer exchange/official or most reputable; be consistent.
         
         # Output Template (fill in **Japanese** exactly in this shape)
