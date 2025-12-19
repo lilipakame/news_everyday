@@ -36,9 +36,8 @@ if not is_business_day:
 client = OpenAI(api_key=OPENAI_API_KEY, timeout=httpx.Timeout(1000.0))
 
 request_body = {
-    "model": "gpt-5",
+    "model": "gpt-5.2",
     "tools": [{"type": "web_search"}],
-    "reasoning": {"effort": "low"},
     "input": [
         {"role": "user", "content": [{"type": "input_text", "text": prompt}]}
     ],
