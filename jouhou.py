@@ -37,6 +37,7 @@ client = OpenAI(api_key=OPENAI_API_KEY, timeout=httpx.Timeout(1000.0))
 
 request_body = {
     "model": "gpt-5.2",
+    "reasoning": {"effort": "low"},
     "tools": [{"type": "web_search"}],
     "input": [
         {"role": "user", "content": [{"type": "input_text", "text": prompt}]}
